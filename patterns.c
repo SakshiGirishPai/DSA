@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
@@ -21,23 +20,19 @@ for( i=1;i<=n;i++)
 {
 
 
-    for( k=1;k<=n;k++)
+    for( k=1;k<=2*n-1;k++)
     {
-      if(i%2!=0&&k%2!=0)
-     {
-
-      for(j=n-1;j>=0;j--)
-
-        printf(" ");}
-        else
+      if(i%2!=0&&k%2!=0&&k>=n-(i-1)&&k<=n+(i-1))
+     
             printf(" *");
-    if(i%2==0&&k%2==0)
-    printf("*");
+    if(i%2==0&&k%2==0&&k>=n-(i-1)&&k<=n+(i-1))
+    printf(" * ");
     else
         printf(" ");
 
 
     }
+
 
 
 printf("\n");
