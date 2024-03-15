@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 #include<math.h>
 int binary(int,int);
@@ -29,9 +30,8 @@ int binary(int n,int u)
 
         u=u/2;
         c=c*10+v;
+      }
         printf("%d",c);
-
-    }
 
     return 0;
 }
